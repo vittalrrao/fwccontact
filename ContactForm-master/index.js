@@ -33,8 +33,8 @@ mongoose.connect('mongodb+srv://fwcinc:Fwc1348@contactform.qpdnohv.mongodb.net/C
 app.use(express.json());
 app.use('/api/contactus', contactUs);
 
-app.get("/url", (req, res, next) => {
-  res.send(["Tony", "sa", "Michael", "Ginger", "Food"]);
+app.get('/', (req, res, next) => {
+  res.send("Tony", "sa", "Michael", "Ginger", "Food");
 });
 
 const port = process.env.port || 3000;
