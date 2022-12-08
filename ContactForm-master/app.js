@@ -34,7 +34,7 @@ app.use(express.json());
 app.use('/api/contactus', contactUs);
 
 app.get("/url", (req, res, next) => {
-  res.json(["Tony", "sa", "Michael", "Ginger", "Food"]);
+  res.send(["Tony", "sa", "Michael", "Ginger", "Food"]);
 });
 
 const port = process.env.port || 3000;
